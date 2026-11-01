@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUJAN TASK MANAGER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <h1>LUJAN TASK MANAGER</h1>
+
+            <p>
+                Sistema Full Stack de Gestión de Tareas
+            </p>
+
+        </div>
+
+        <div class="dashboard">
+
+            <div class="card-stat">
+
+                <h2 id="contador">0</h2>
+                <span>Tareas Registradas</span>
+
+            </div>
+
+        </div>
+
+        <div class="form">
+
+            <input
+                type="text"
+                id="titulo"
+                placeholder="Título de la tarea">
+
+            <input
+                type="text"
+                id="descripcion"
+                placeholder="Descripción">
+
+            <button onclick="crearTarea()">
+                Agregar Tarea
+            </button>
+
+        </div>
+
+        <div id="tareas"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
